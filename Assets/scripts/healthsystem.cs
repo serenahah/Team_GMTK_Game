@@ -10,7 +10,7 @@ public class healthsystem : MonoBehaviour
     public GameObject hit3;
     public GameObject hit4;
     public GameObject empty;
- 
+    float hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +25,10 @@ public class healthsystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        hitcheck();
         
     }
-    public  void hitcheck( int hit)
+    public  void hitcheck()
     {
         hit = playerdeadcheck.hit;
         if (hit == 1)
