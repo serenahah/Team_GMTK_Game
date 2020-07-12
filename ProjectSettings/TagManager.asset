@@ -12,6 +12,10 @@ TagManager:
   - tr1
   - tr2
   - tr3
+  - health
+  - onpause
+  - bg
+  - pp
   layers:
   - Default
   - TransparentFX
