@@ -47,7 +47,7 @@ public class playerdeadcheck : MonoBehaviour
             {
                 UImanager.dead = true;
             }
-
+            shakecine.shake = true;
             StartCoroutine(hitfreeze());
             hitpause = true;
 
