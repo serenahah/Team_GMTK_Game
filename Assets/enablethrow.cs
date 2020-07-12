@@ -5,6 +5,7 @@ using UnityEngine;
 public class enablethrow : MonoBehaviour
 {
     public GameObject tr1, tr2, tr3;
+    public LayerMask lay;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,17 @@ public class enablethrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Vector2 currentpos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 to = new Vector2(10, 0);
+
+        Debug.DrawRay(currentpos, to, Color.green);
         
+        RaycastHit2D hitRight = Physics2D.Raycast(currentpos, to, 10, lay);
+        if (hitRight)
+        {
+            Debug.Log("hit");
+        }
     }
      
     void throwright1()
@@ -29,6 +40,8 @@ public class enablethrow : MonoBehaviour
     void throwright3()
     {
         tr3.SetActive(true);
+      
+
     }
 
 
