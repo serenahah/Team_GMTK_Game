@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumptime: 1.5
-  throwtime: 1.6
+  throwtime: 1.71
 --- !u!1 &855007251
 GameObject:
   m_ObjectHideFlags: 0
