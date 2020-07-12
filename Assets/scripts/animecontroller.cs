@@ -11,7 +11,8 @@ public class animecontroller : MonoBehaviour
     bool hidestate, throwstate;
 
     private SpriteRenderer spriteren;
-
+    public AudioSource jump;
+    public AudioSource thro;
     private void Awake()
     {
         spriteren = GetComponent<SpriteRenderer>();
@@ -105,6 +106,7 @@ public class animecontroller : MonoBehaviour
             StartCoroutine(throwinmotion());
         }
     }
+
     void Move()
     {
 
@@ -133,5 +135,14 @@ public class animecontroller : MonoBehaviour
             throwstate = false;
             StopAllCoroutines();
         }
+    }
+    void Jumpsound()
+    {
+        jump.Play();
+
+    }
+    void throwsound()
+    {
+        thro.Play();
     }
 }
