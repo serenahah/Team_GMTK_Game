@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class playerdeadcheck : MonoBehaviour
 {
+    
     public bool dead;
     public float hitfreezetime;
     public static int hit;
     bool hitpause, wcon;
+    public AudioSource damage;
+    public AudioSource death;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class playerdeadcheck : MonoBehaviour
         hit = 0;
         hitpause = false;
         wcon = true;
+
     }
 
     // Update is called once per frame
@@ -45,7 +49,12 @@ public class playerdeadcheck : MonoBehaviour
             Debug.Log(hit);
             if(hit == 5)
             {
+                death.Play();
                 UImanager.dead = true;
+            }
+            else if(hit<5)
+            {
+                damage.Play();
             }
             shakecine.shake = true;
             StartCoroutine(hitfreeze());

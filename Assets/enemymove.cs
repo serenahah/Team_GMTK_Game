@@ -6,6 +6,7 @@ public class enemymove : MonoBehaviour
 {
     Rigidbody2D rb;
     public float moveby;
+    public AudioSource sythe;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,9 @@ public class enemymove : MonoBehaviour
     private void move()
     {
         rb.velocity = new Vector2(moveby, rb.velocity.y);
+    }
+    private void playsythe()
+    {
+        sythe.Play();
     }
 }
