@@ -7,13 +7,14 @@ public class playerdeadcheck : MonoBehaviour
     public bool dead;
     public float hitfreezetime;
     public static int hit;
-    bool hitpause;
+    bool hitpause, wcon;
     // Start is called before the first frame update
     void Start()
     {
         dead = false;
         hit = 0;
         hitpause = false;
+        wcon = true;
     }
 
     // Update is called once per frame
@@ -37,28 +38,33 @@ public class playerdeadcheck : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
 
-
+        Debug.Log("in col stay" + hitpause);
         if (collision.gameObject.tag == "enemy" && hitpause == false)
         {
             hit++;
             Debug.Log(hit);
-            
             if(hit == 5)
             {
                 UImanager.dead = true;
             }
-
+            shakecine.shake = true;
             StartCoroutine(hitfreeze());
+            hitpause = true;
+
         }
     }
     IEnumerator hitfreeze()
     {
+
         while (true)
         {
-            hitpause = true;
+
+            
+            
             yield return new WaitForSeconds(hitfreezetime);
-            hitpause = false;
+            hitpause = false;            
             StopCoroutine(hitfreeze());
+
         }
     }
 
