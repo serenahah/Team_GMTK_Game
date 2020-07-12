@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class enablethrow : MonoBehaviour
 {
-    public GameObject tr1, tr2, tr3;
     public LayerMask lay;
     bool direction;
     // Start is called before the first frame update
@@ -17,25 +16,17 @@ public class enablethrow : MonoBehaviour
     void Update()
     {
         float x = Input.GetAxisRaw("Horizontal");
-        if (x > 0.01)
+        if (x>0.5)
         {
             direction = true;
         }
-        else if(x < 0.01)
+        else if(x<-0.5)
         {
             direction = false;
         }
+        Debug.Log("direction"+direction);
+    }
 
-    }
-    void throwright1()
-    {
-        tr1.SetActive(true);
-
-    }
-    void throwright2()
-    {
-        tr2.SetActive(true);
-    }
     void throwright3()
     {
         if (direction)
@@ -73,13 +64,4 @@ public class enablethrow : MonoBehaviour
 
     }
 
-
-
-    private void Oisableall()
-    {
-        tr1.SetActive(false);
-        tr2.SetActive(false);
-        tr3.SetActive(false);
-
-    }
 }

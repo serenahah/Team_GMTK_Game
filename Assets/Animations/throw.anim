@@ -119,20 +119,6 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.28333333
-    functionName: throwsound
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.31666666
-    functionName: throwright1
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.41666666
     functionName: throwright3
     data: 
@@ -142,13 +128,6 @@ AnimationClip:
     messageOptions: 0
   - time: 0.53333336
     functionName: throwright3
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.85
-    functionName: Oisableall
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -15,7 +15,7 @@ public class mainmenuUI : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Z)){
-            SceneManager.LoadScene("test");
+            SceneManager.LoadScene("gameplay");
         }
         if (Input.GetKey(KeyCode.Escape)){
             Application.Quit();
@@ -28,7 +28,7 @@ public class mainmenuUI : MonoBehaviour
     }
     public void load()
     {
-        SceneManager.LoadScene("test");
+        SceneManager.LoadScene("gameplay");
 
     }
 }
