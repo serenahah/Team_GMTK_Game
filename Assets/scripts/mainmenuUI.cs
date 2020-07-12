@@ -15,7 +15,12 @@ public class mainmenuUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Z)){
+            SceneManager.LoadScene("test");
+        }
+        if (Input.GetKey(KeyCode.Escape)){
+            Application.Quit();
+        }
     }
 
     public void ExitGame()

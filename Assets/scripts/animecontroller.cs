@@ -43,7 +43,7 @@ public class animecontroller : MonoBehaviour
         
         float x = Input.GetAxisRaw("Horizontal");
         Debug.Log(x);
-        if (midjump == false && hidestate == false && throwstate == false)
+        if (hidestate == false && throwstate == false)
         {
             bool flipsorite = (spriteren.flipX ? (x > 0.01f) : (x < -0.01f));
             if (flipsorite)
