@@ -25,40 +25,40 @@ AnimationClip:
     - time: 0.05
       value: {fileID: 1207093263012044350, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.11666667
+    - time: 0.1
       value: {fileID: -6151685336205448183, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.18333334
+    - time: 0.23333333
       value: {fileID: -4913250307632329187, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.23333333
+    - time: 0.28333333
       value: {fileID: -8066240510195966552, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.31666666
+    - time: 0.36666667
       value: {fileID: 1742889291504595215, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.41666666
+    - time: 0.4
       value: {fileID: 3164433180211255609, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.53333336
+    - time: 0.5833333
       value: {fileID: -3297827617454682730, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.65
+    - time: 0.7
       value: {fileID: 1931410440053161499, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.76666665
+    - time: 0.8
       value: {fileID: -2870210814423721484, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 0.8833333
+    - time: 0.98333335
       value: {fileID: 4675085065052702102, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 1.0166667
+    - time: 1.1
       value: {fileID: 5546835014928191332, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 1.1333333
+    - time: 1.2166667
       value: {fileID: 459628609401379436, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
-    - time: 1.2666667
+    - time: 1.3833333
       value: {fileID: 459628609401379436, guid: 0b1e9fcf43865a14597e676407717953,
         type: 3}
     attribute: m_Sprite
@@ -99,7 +99,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2833333
+    m_StopTime: 1.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -134,7 +134,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.41666666
-    functionName: throwright2
+    functionName: throwright3
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -147,7 +147,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.8833333
+  - time: 0.85
     functionName: Oisableall
     data: 
     objectReferenceParameter: {fileID: 0}
