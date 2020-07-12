@@ -49,6 +49,11 @@ public class UImanager : MonoBehaviour
             {
                 SceneManager.LoadScene("menu");
             }
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                SceneManager.LoadScene("gameplay");
+            }
+
         }
         if( gameon == true && Input.GetKey(KeyCode.Escape))
         {

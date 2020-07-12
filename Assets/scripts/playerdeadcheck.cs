@@ -49,8 +49,10 @@ public class playerdeadcheck : MonoBehaviour
             Debug.Log(hit);
             if(hit == 5)
             {
+
                 death.Play();
                 UImanager.dead = true;
+                
             }
             else if(hit<5)
             {
@@ -60,6 +62,16 @@ public class playerdeadcheck : MonoBehaviour
             StartCoroutine(hitfreeze());
             hitpause = true;
 
+        }
+
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "bad")
+        {
+            death.Play();
+            UImanager.dead = true;
         }
     }
     IEnumerator hitfreeze()
