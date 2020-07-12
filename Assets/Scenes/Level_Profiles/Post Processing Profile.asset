@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5854058169647970332
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 0.253
+  fastMode:
+    overrideState: 1
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,6 +41,52 @@ MonoBehaviour:
   settings:
   - {fileID: 6756528853620024980}
   - {fileID: 6722844691945417673}
+  - {fileID: -5854058169647970332}
+  - {fileID: 554086445615130878}
+--- !u!114 &554086445615130878
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0.20932718, g: 0.28505775, b: 0.3018868, a: 1}
+  center:
+    overrideState: 1
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.564
+  smoothness:
+    overrideState: 1
+    value: 0.142
+  roundness:
+    overrideState: 0
+    value: 1
+  rounded:
+    overrideState: 0
+    value: 0
+  mask:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  opacity:
+    overrideState: 0
+    value: 1
 --- !u!114 &6722844691945417673
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -68,7 +140,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -8
+    value: -5
   tint:
     overrideState: 0
     value: 0
@@ -80,16 +152,16 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: -29
+    value: 10
   brightness:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 14
   postExposure:
     overrideState: 0
     value: 0
   contrast:
     overrideState: 1
-    value: 18
+    value: 29
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -1344,19 +1416,19 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 6.99
+    value: 7.89
   threshold:
     overrideState: 1
-    value: 0.56
+    value: 0.49
   softKnee:
-    overrideState: 0
-    value: 0.44
-  clamp:
     overrideState: 1
-    value: 65482.78
-  diffusion:
+    value: 0.3
+  clamp:
     overrideState: 0
-    value: 7
+    value: 73.54
+  diffusion:
+    overrideState: 1
+    value: 4.53
   anamorphicRatio:
     overrideState: 0
     value: 0
