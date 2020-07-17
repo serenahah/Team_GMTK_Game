@@ -70,7 +70,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.564
+    value: 0.571
   smoothness:
     overrideState: 1
     value: 0.142
@@ -1416,7 +1416,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 2.46
+    value: 0.55
   threshold:
     overrideState: 1
     value: 0.49

@@ -63,7 +63,7 @@ public class animecontroller : MonoBehaviour
             ani.SetBool("idle", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Z) && midjump == false && hidestate == false && throwstate == false)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && midjump == false && hidestate == false && throwstate == false)
         {
             ani.SetBool("jump", true);
             midair = true;
@@ -88,7 +88,7 @@ public class animecontroller : MonoBehaviour
             */
 
 
-        if (Input.GetKey(KeyCode.C) && midjump == false && throwstate == false)
+        if (Input.GetKey(KeyCode.DownArrow) && midjump == false && throwstate == false)
         {
             ani.SetBool("hide", true);
             hidestate = true;

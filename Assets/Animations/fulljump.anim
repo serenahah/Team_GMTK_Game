@@ -22,13 +22,13 @@ AnimationClip:
     - time: 0
       value: {fileID: -4527101150955727993, guid: a8baa94d4720b354d85cb67db97ecac8,
         type: 3}
-    - time: 0.06666667
+    - time: 0.033333335
       value: {fileID: -8120351189601078732, guid: a8baa94d4720b354d85cb67db97ecac8,
         type: 3}
-    - time: 0.15
+    - time: 0.083333336
       value: {fileID: 3761819920989558474, guid: a8baa94d4720b354d85cb67db97ecac8,
         type: 3}
-    - time: 0.25
+    - time: 0.15
       value: {fileID: -6180413616105259787, guid: a8baa94d4720b354d85cb67db97ecac8,
         type: 3}
     - time: 0.85
@@ -99,14 +99,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.25
+  - time: 0.15
     functionName: Jumpsound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.26666668
+  - time: 0.16666667
     functionName: jmp
     data: 
     objectReferenceParameter: {fileID: 0}
